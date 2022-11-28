@@ -2,6 +2,8 @@ package com.insightfullogic.java8.examples.chapter4;
 
 import org.junit.Test;
 
+import java.util.Objects;
+
 import static org.junit.Assert.assertEquals;
 
 public class TestDefaultSubClassing {
@@ -18,6 +20,7 @@ public void parentDefaultUsed() {
 // BEGIN child_override_default
 @Test
 public void childOverrideDefault() {
+
     Child child = new ChildImpl();
     child.welcome();
     assertEquals("Child: Hi!", child.getLastMessage());

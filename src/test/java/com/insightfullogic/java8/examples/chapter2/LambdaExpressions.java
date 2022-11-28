@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiFunction;
 import java.util.function.BinaryOperator;
+import java.util.function.IntPredicate;
 import java.util.function.Predicate;
 
 /**
@@ -157,22 +158,23 @@ private void overloadedMethod(IntegerBiFunction lambda) {
 }
     // END most_specific_bifunction
 
-//    @Test
-//    public void mostSpecificPredicate() {
+    @Test
+    public void mostSpecificPredicate() {
 //        overloadedMethod((x) -> true);
-//    }
+//        java.lang.Comparable
+    }
 
 //    private interface IntPredicate  {
 //        public boolean test(int value);
 //    }
 
-//    private void overloadedMethod(Predicate<Integer> predicate) {
-//        System.out.print("Predicate");
-//    }
+    private void overloadedMethod(Predicate<Integer> predicate) {
+        System.out.print("Predicate");
+    }
 
-//    private void overloadedMethod(IntPredicate predicate) {
-//        System.out.print("IntPredicate");
-//    }
+    private void overloadedMethod(IntPredicate predicate) {
+        System.out.print("IntPredicate");
+    }
 
     private String getUserName() {
         return "Richard";
