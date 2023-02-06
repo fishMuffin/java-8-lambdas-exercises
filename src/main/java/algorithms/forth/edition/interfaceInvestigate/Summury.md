@@ -1,0 +1,1 @@
+Interface's abstract implementing classes don't have to implement all the method in the interface, but normal class need to implement all the method in the interface.
